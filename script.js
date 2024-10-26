@@ -86,7 +86,8 @@ document.querySelector('form').addEventListener('submit', function (event) {
     fetch('https://oo62r8ome9.execute-api.us-east-1.amazonaws.com/Prod/createcustomer', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin':'https://app.netlify.com'
       },
       body: JSON.stringify(data)
     })
