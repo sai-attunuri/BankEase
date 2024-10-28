@@ -98,6 +98,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
     })
     .catch(error => {
       console.error('Error:', error);
+      console.info('Error occured in calling API:', error);
       alert('Failed to create customer. Please try again.');
     });
   }
